@@ -53,3 +53,75 @@
 p{
     text-align: center;
 }
+
+/* Alert Overlay - Custom Alert */
+
+    #alertOverlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        background: rgba(0,0,0,.5);
+        display: none;
+    }
+
+    .alert{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(54,74,83);
+        border: 2px solid rgb(45,217,191);
+        border-radius: .75em;
+        padding: 1em;
+    }
+
+    .alertScore{
+        margin: 2em;
+    }
+
+    .alertScore p{
+        color: #fff;
+    }
+
+    .alertContinue{
+        margin: 0 5em 2em;
+    }
+
+    .gameScore{
+        font-size: 1.25rem;
+    }
+
+    .alertButton{
+        padding: .65em;
+        background: rgb(59 75 82);
+        border: 1px solid rgb(45,217,191);
+        color: #fff;
+        border-radius: 1em;
+        margin: 0 .5em;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .alertButton:hover, .alertButton:active{
+        background: rgb(13 118 142);
+        border: 1px solid rgb(45,217,191);
+        color: #000;
+    }
+
+    /* Makes buttons into one column on small screens */
+    @media screen and (max-width: 356px) {
+        .alertContinue{
+            display: flex;
+            flex-direction: column;
+        }
+        #stop{
+            margin-top: 1em;
+        }
+    }
+
+/* Alert Overlay - Custom Alert End */

@@ -7,6 +7,22 @@
     <title>Jump game</title>
 </head>
 <body>
+
+    <!-- Custom Alert Overlay -->
+    <div id='alertOverlay'>
+        <div class='alert'>
+            <div class="alertScore">
+                <p id='gameScoreText' class='gameScore'>Game Over. Score: <span id="score"></span></p>
+            </div>
+
+            <div class="alertContinue">
+                <button id="continue" class='alertButton' onclick='location.reload()'>Play Again</button>
+                <button id="stop" class='alertButton' onclick='stop()'>Stop</button>
+            </div>
+        </div>
+    </div>
+    <!-- Custom Alert Overlay End -->
+
     <div class="game">
         <div id="character"></div>
         <div id="block"></div>
